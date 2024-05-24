@@ -24,4 +24,22 @@ TestingTools:
   CompatabilityTesting:
     - BrowserStack
     - SauceLabs
-BugTrackingProjectLink: https://github.com/users/aparkinson/projects/2
+BugTrackingProjectLink: replace-me-with-bug-tracking-project-link
+Roles:
+  # Please add/change GitHub usernames to the following roles
+  Management:
+    Lead: aparkinson
+    Members:
+      - aparkinson
+  SWDevelopment:
+    Lead: aparkinson
+    Members:
+      - aparkinson
+  Clinical:
+    Lead: aparkinson
+    Members:
+      - aparkinson
+  QARA:
+    Lead: aparkinson
+    Members:
+      - aparkinson
