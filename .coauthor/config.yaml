@@ -1,9 +1,9 @@
-Company: aparkinson
+Company: Hindsight Software
 Application: Coauthor
 ProductDescription: |
-  Product Description Line 1
-  Product Description Line 2
+  Coauthor, your best compliance assist
 Market:
+  - EU
   - UK
 SoftwareClassification:
   Questions:
@@ -11,7 +11,8 @@ SoftwareClassification:
   SafetyClass: A
   Rationale: |
     This is a class A rationale
-    This is a class A rationale
+    Line 2
+    Line 3
 TestingTools:
   SystemTesting:
     - Selenium
@@ -20,25 +21,39 @@ TestingTools:
   SecurityTesting:
     - ZAP
     - Burp
-  CompatabilityTesting:
+  CompatibilityTesting:
     - BrowserStack
     - SauceLabs
-BugTrackingProjectLink: replace-me-with-bug-tracking-project-link
 Roles:
-  # Please add/change GitHub usernames to the following roles
   Management:
-    Lead: aparkinson
+    Lead: michaelcychan
     Members:
-      - aparkinson
-  SWDevelopment:
-    Lead: aparkinson
-    Members:
-      - aparkinson
-  Clinical:
-    Lead: aparkinson
-    Members:
-      - aparkinson
+      - michaelcychan
   QARA:
-    Lead: aparkinson
+    Lead: michaelcychan
     Members:
-      - aparkinson
+      - michaelcychan
+      - michaelchansecond
+  SWDevelopment:
+    Lead: michaelcychan
+    Members:
+      - michaelcychan-org/michaelcychan-org-team
+  Clinical:
+    Lead: michaelchansecond
+    Members:
+      - michaelcychan-org/michaelcychan-org-team
+SDLC:
+  IssueTracking:
+    Provider: “GitHub”
+    TrackingProjectLink:
+  BranchingStrategy: “Feature Branching”
+  CommitMessageFormat: “Conventional Commits”
+  Methodology: “SCRUM”
+  IterationLength: 2
+RequirementManagement:
+  “GitHub”:
+    ProjectLink: https://github.com/orgs/michaelcychan-org/projects/1
+Security:
+  PenetrationTesting:
+    Required: true
+    Frequency: “Quarterly”
