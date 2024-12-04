@@ -1,18 +1,13 @@
-Company: Hindsight Software
+Company: Hindsight
 Application: Coauthor
-ProductDescription: |
-  Coauthor, your best compliance assist
+ProductDescription: some description
 Market:
-  - EU
   - UK
 SoftwareClassification:
   Questions:
     HazardousSituationPossible: false
   SafetyClass: A
-  Rationale: |
-    This is a class A rationale
-    Line 2
-    Line 3
+  Rationale: some text
 TestingTools:
   SystemTesting:
     - Selenium
@@ -26,34 +21,50 @@ TestingTools:
     - SauceLabs
 Roles:
   Management:
-    Lead: michaelcychan
+    Lead: michelle
     Members:
-      - michaelcychan
-  QARA:
-    Lead: michaelcychan
-    Members:
-      - michaelcychan
-      - michaelchansecond
+      - mike
+      - molly
+      - michelle
   SWDevelopment:
-    Lead: michaelcychan
+    Lead: sam
     Members:
-      - michaelcychan-org/michaelcychan-org-team
+      - sam
+      - sally
+      - susan
   Clinical:
-    Lead: michaelchansecond
+    Lead: cathy
     Members:
-      - michaelcychan-org/michaelcychan-org-team
+      - github-org/cathy-christy-team
+      - carl
+  QARA:
+    Lead: romeo
+    Members:
+      - rosy
+      - 'github-org/rosy-romeo-team'
 SDLC:
-  IssueTracking:
-    Provider: “GitHub”
-    TrackingProjectLink:
-  BranchingStrategy: “Feature Branching”
-  CommitMessageFormat: “Conventional Commits”
-  Methodology: “SCRUM”
+  BranchingStrategy: "Feature Branching"
+  CommitMessageFormat: "Conventional Commits"
+  Methodology: "SCRUM"
   IterationLength: 2
 RequirementManagement:
-  “GitHub”:
-    ProjectLink: https://github.com/orgs/michaelcychan-org/projects/1
+  GitHub:
+      ProjectLink: https://github.com/orgs/company-org/projects/2
 Security:
+  CommitSigning: true
   PenetrationTesting:
     Required: true
-    Frequency: “Quarterly”
+    Frequency: "Quarterly"
+  SAST:
+    Tools:
+      - "SonarQube"
+      - "Checkmarx"
+    Frequency: "Every Build"
+  SBOM:
+    GenerationTools:
+      - "WhiteSource"
+      - "BlackDuck"
+    MonitoringTools:
+      - "WhiteSource"
+      - "BlackDuck"
+    Frequency: "Every Build"
